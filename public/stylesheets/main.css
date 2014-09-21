@@ -1,0 +1,37 @@
+html {
+    background: url(/images/background.jpg) 0 0 no-repeat;
+}
+
+#thermometer {
+    top: 20px;
+    left: 157px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: url(/images/empty_thermometer.png) top center no-repeat;
+}
+
+#mercury {
+    top: -7px;
+    left: 208px;
+    height: 100%;
+    width: 46%;
+    z-index: 0;
+    background: url(/images/gradient.png) bottom center no-repeat;
+}
+
+#hide {
+    top: -8px;
+    left: 208px;
+    height: 100%;
+    width: 46%;
+    background: #3e7667;
+    /*border:1px solid #aaa;*/
+    z-index: 1;
+}
+
+#container {
+    height: 870px;
+    width: 188px;
+    position: relative;
+}
