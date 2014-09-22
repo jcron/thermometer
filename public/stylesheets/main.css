@@ -3,7 +3,7 @@ html {
 }
 
 #thermometer {
-    top: 20px;
+    top: 0;
     left: 157px;
     height: 100%;
     width: 100%;
@@ -12,19 +12,19 @@ html {
 }
 
 #mercury {
-    top: -7px;
-    left: 208px;
+    top: -240px;
+    left: 214px;
     height: 100%;
-    width: 46%;
+    width: 40%;
     z-index: 0;
     background: url(/images/gradient.png) bottom center no-repeat;
 }
 
 #hide {
-    top: -8px;
-    left: 208px;
+    top: -240px;
+    left: 214px;
     height: 100%;
-    width: 46%;
+    width: 40%;
     background: #3e7667;
     /*border:1px solid #aaa;*/
     z-index: 1;
