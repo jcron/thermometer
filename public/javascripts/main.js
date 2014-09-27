@@ -3,6 +3,15 @@ $(document).ready(function() {
         changeLevel(e.pageY);
     });
 
+    var amounts = [165000, 141420, 117850, 94280, 70710, 47140, 23570];
+
+    $("#goal").text("$" + amounts[0].format());
+    $("#sub-goal-left-1").text("$" + amounts[1].format());
+    $("#sub-goal-right-2").text("$" + amounts[2].format());
+    $("#sub-goal-left-3").text("$" + amounts[3].format());
+    $("#sub-goal-right-4").text("$" + amounts[4].format());
+    $("#sub-goal-left-5").text("$" + amounts[5].format());
+    $("#sub-goal-right-6").text("$" + amounts[6].format());
     //call without the parameters to have it read from the DOM
 //    thermometer("thermo1");
     // or with parameters if you want to update it using JavaScript.
@@ -16,6 +25,11 @@ function changeLevel(y){
     var hide = $("#hide");
     hide.animate({'height':y +'px'}, 500);
 }
+
+Number.prototype.format = function(n, x) {
+    var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\.' : '$') + ')';
+    return this.toFixed(Math.max(0, ~~n)).replace(new RegExp(re, 'g'), '$&,');
+};
 
 //originally from http://stackoverflow.com/questions/149055/how-can-i-format-numbers-as-money-in-javascript
 function formatCurrency(n, c, d, t) {

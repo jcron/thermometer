@@ -1,40 +1,99 @@
 html {
-    background: url(/images/background.jpg) 0 0 no-repeat;
+    background: #3e7667;
 }
 
 body {
     margin: 0;
+    background: url(/images/background.jpg) 0 0 no-repeat;
 }
 
-#thermometer {
+#container {
+    left: 0;
+    height: 768px;
+    width: 510px;
+    position: relative;
+}
+
+#mercury,
+#hide {
     top: 0;
-    left: 165px;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    background: url(/images/empty_thermometer.png) top center no-repeat;
+    left: 220px;
+    height: 635px;
+    width: 72px;
+    position: absolute;
 }
 
 #mercury {
-    top: 0;
-    left: 222px;
-    height: 635px;
-    width: 40%;
     z-index: 0;
     background: url(/images/gradient.png) bottom center no-repeat;
 }
 
 #hide {
-    top: 0;
-    left: 222px;
-    height: 635px;
-    width: 40%;
     background: #3e7667;
     z-index: 1;
 }
 
-#container {
-    height: 768px;
-    width: 188px;
+#thermometer {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    cursor: vertical-text;
+    background: url(/images/empty_thermometer_with_bulb.png) top center no-repeat;
+    position: absolute;
+}
+
+#money {
     position: relative;
+    height: 633px;
+    width: 510px;
+    z-index: 0;
+}
+
+.amounts {
+    position: absolute;
+    font: bold 34px Verdana, Arial, Helvetica, sans-serif;
+    text-shadow: 0 0, 0 1px black, 3px 0 black, 0 0;
+}
+
+#goal {
+    top: 0%;
+    right: 22px;
+    color: #6ce700;
+}
+
+#sub-goal-left-1 {
+    top: 15%;
+    left: 22px;
+    color: #6ce700;
+}
+
+#sub-goal-right-2 {
+    top: 30%;
+    right: 22px;
+    color: #6ce700;
+}
+
+#sub-goal-left-3 {
+    top: 45%;
+    left: 22px;
+    color: #6ce700;
+}
+
+#sub-goal-right-4 {
+    top: 60%;
+    right: 22px;
+    color: #6ce700;
+}
+
+#sub-goal-left-5 {
+    top: 75%;
+    left: 22px;
+    color: #6ce700;
+}
+
+#sub-goal-right-6 {
+    top: 85%;
+    right: 22px;
+    color: #6ce700;
 }
