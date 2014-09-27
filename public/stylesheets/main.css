@@ -2,9 +2,13 @@ html {
     background: url(/images/background.jpg) 0 0 no-repeat;
 }
 
+body {
+    margin: 0;
+}
+
 #thermometer {
     top: 0;
-    left: 157px;
+    left: 165px;
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -12,26 +16,25 @@ html {
 }
 
 #mercury {
-    top: -240px;
-    left: 214px;
-    height: 100%;
+    top: 0;
+    left: 222px;
+    height: 635px;
     width: 40%;
     z-index: 0;
     background: url(/images/gradient.png) bottom center no-repeat;
 }
 
 #hide {
-    top: -240px;
-    left: 214px;
-    height: 100%;
+    top: 0;
+    left: 222px;
+    height: 635px;
     width: 40%;
     background: #3e7667;
-    /*border:1px solid #aaa;*/
     z-index: 1;
 }
 
 #container {
-    height: 870px;
+    height: 768px;
     width: 188px;
     position: relative;
 }
