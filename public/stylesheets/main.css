@@ -4,10 +4,36 @@ html {
 
 body {
     margin: 0;
-    background: url(/images/background.jpg) 0 0 no-repeat;
+    background: url(/images/Thermometer_3.jpg) 0 0 no-repeat;
+}
+
+canvas {
+  cursor: none;
+}
+
+#canvas_text {
+    position: absolute;
+    z-index: 1;
+    color: #FFF;
+    display:none;
+    font: bold 60px Verdana;
+    top: 25%;
+    left: 25%;
+}
+
+#black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    z-index: -1;
 }
 
 #container {
+    opacity: 1;
     left: 0;
     height: 768px;
     width: 510px;
@@ -57,7 +83,7 @@ body {
 }
 
 #goal {
-    top: 0%;
+    top: 0;
     right: 22px;
     color: #6ce700;
 }
@@ -65,35 +91,35 @@ body {
 #sub-goal-left-1 {
     top: 15%;
     left: 22px;
-    color: #6ce700;
+    color: #bdfb00;
 }
 
 #sub-goal-right-2 {
     top: 30%;
     right: 22px;
-    color: #6ce700;
+    color: #b5ed01;
 }
 
 #sub-goal-left-3 {
     top: 45%;
     left: 22px;
-    color: #6ce700;
+    color: #f7f508;
 }
 
 #sub-goal-right-4 {
     top: 60%;
     right: 22px;
-    color: #6ce700;
+    color: #faf307;
 }
 
 #sub-goal-left-5 {
     top: 75%;
     left: 22px;
-    color: #6ce700;
+    color: #f25104;
 }
 
 #sub-goal-right-6 {
     top: 85%;
     right: 22px;
-    color: #6ce700;
+    color: #d53831;
 }
