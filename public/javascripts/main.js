@@ -19,6 +19,9 @@ function setupClickHandlers() {
         changeLevel(e.pageY);
         if (e.pageY < 25) {
             setTimeout(function() {
+                $('canvas').add("<audio autoplay>" +
+                    "<source src=\"/audio/Hallelujah.mp3\" type=\"audio/mpeg\">" +
+                    "</audio>");
                 $("#container").fadeOut(1000);
                 $("#body").fadeOut(1000);
                 $('#black').animate({
