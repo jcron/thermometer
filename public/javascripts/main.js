@@ -9,9 +9,6 @@ var amounts = [
     23570
 ];
 
-
-
-
 $(document).ready(function() {
     setupClickHandlers();
     setAmounts();
@@ -20,7 +17,7 @@ $(document).ready(function() {
 function setupClickHandlers() {
     $("#thermometer").click(function(e) {
         changeLevel(e.pageY);
-        if (e.pageY < 5) {
+        if (e.pageY < 25) {
             setTimeout(function() {
                 $("#container").fadeOut(1000);
                 $("#body").fadeOut(1000);
