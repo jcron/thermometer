@@ -1,13 +1,14 @@
 var goal = 165000;
 
-var amounts = [
-    141420,
-    117850,
-    94280,
-    70710,
-    47140,
-    23570
-];
+// can specify 6 amounts here, but if not needed, then they will be calculated based on the goal
+var amounts = [];
+//    141420,
+//    117850,
+//    94280,
+//    70710,
+//    47140,
+//    23570
+//];
 
 $(document).ready(function() {
     setupClickHandlers();
@@ -39,9 +40,10 @@ function setAmounts() {
     $("#goal").text("$" + goal.format());
 
     if (amounts.length == 0) {
-        for (var i = 1; i < 6; i ++) {
-            var amount = (goal / 7) * i; // Round down to nearest whole ten digit
-            amounts.push(amount);
+        for (var i = 1; i < 7; i ++) {
+            var amount = roundTen(Math.floor((goal / 7) * i));
+            console.log(amount);
+            amounts.unshift(amount);
         }
     }
     $("#sub-goal-left-1").text("$" + amounts[0].format());
@@ -50,6 +52,10 @@ function setAmounts() {
     $("#sub-goal-right-4").text("$" + amounts[3].format());
     $("#sub-goal-left-5").text("$" + amounts[4].format());
     $("#sub-goal-right-6").text("$" + amounts[5].format());
+}
+
+function roundTen(number) {
+    return Math.round(number/10)*10;
 }
 
 function changeLevel(y){
