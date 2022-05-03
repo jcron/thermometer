@@ -1,7 +1,7 @@
 source "https://rubygems.org/"
 
 # App Stack
-gem "sinatra", "~> 1.4"
+gem "sinatra", "~> 2.2"
 
 
 group :development do
